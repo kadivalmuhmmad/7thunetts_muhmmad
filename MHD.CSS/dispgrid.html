@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            width: 90%;
+            margin: 50px auto;
+            border: 1px solid;
+            display: grid;
+            grid-template-rows: 150px 150px;
+            grid-template-columns: 1fr 1fr 1fr;
+            /* grid-row-gap: 20px; */
+            /* grid-column-gap: 20px; */
+            grid-gap: 20px;
+            grid-auto-rows: 150px;    
+        }
+        .div1{
+            background-color: blue;
+        }
+        .div2{
+            background-color: red;
+            grid-column: 1/-1;
+        }
+        .div3{
+            background-color: darkcyan;
+        }
+        .div4{
+            background-color: green;
+        }
+        .div5{
+            background-color: purple;
+            /* grid-row-start: 1; grid-row-end: 2; */
+            grid-row:1/2 ;
+            /* grid-column-start: 2; grid-column-end: 4; */
+            grid-column:2/4 ;
+        }
+        .div6{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="div1">div1</div>
+        <div class="div2">div2</div>
+        <div class="div3">div3</div>
+        <div class="div4">div4</div>
+        <div class="div5">div5</div>
+        <div class="div6">div6</div>
+    </div>
+
+    
+</body>
+</html>

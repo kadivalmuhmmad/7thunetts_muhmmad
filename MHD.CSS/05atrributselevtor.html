@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a[href=""]{
+            font-size: 2em;
+            color: green;
+        }
+        /*<a> element with a tital attribute start*/
+        a[tital] {
+            border: 2px solid orangered;
+        }    
+        /*<a>element with a tital attribute end*/
+
+        /*<a>element with an href matching "htttps://exampale.org" start*/
+        a[href="https://www.tops-int.com"] {
+            font-weight: bolder;
+        }
+        /*<a> elements with an href matching "https://exampal.org" end*/
+
+        /* <a> element with an href containing "exampal" start*/
+        a[href*="exampal"] {
+            font-size: 2em;
+        }
+        a[href*="inexample.com"] {
+            font-size: 3em;
+        }
+        /*<a>element with an href containing "exampal" end*/
+            
+        /* <a> element with anhref ending ".org" start*/
+        a[href$=".in"] {
+            font-style: italic;
+            background: linear-gradient(orangered,white,green);
+        }
+        /*<a> element with an href ending ".org" end*/
+        
+        /* <a> element wheso class attribute contains the word "iogo" */
+        a[class="long"] {
+            padding: 2px;
+            font-size: 36px;
+        }
+        a[href*="tops-int" ] {
+            font-size: 2em;
+
+        }
+        a[href*="home"] {
+            font-style: italic;
+
+        }
+        /* <a> element wheso class attribute contains the word "iogo"         */
+
+    </style>
+</head>
+<body>
+    <a href="">clic here</a> 
+    <a href="">my name</a>
+     <a href="https://www.tops-int.com">websit tital</a>
+      <a accesskey="h"tital="alt+h"href="https://www.google.com">google</a> 
+      <a href="https://www.home.com">home</a> <a href="exampal">about</a>
+       <a href="https://www.exampal.com">contact</a>
+        <a href="https://www.aa.in">india</a>
+         <a href="https://www.inexample.com">contact</a> 
+         <a class="long"href="#">mysite</a>
+</body>    
+</html>
+
