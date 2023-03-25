@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div {
+            /* border: 1px solid; */
+        }
+        .container {
+            width: 1200px;
+            /* width: 100%; */
+            margin: 0 auto;
+        }
+        #header{
+            position: sticky;
+            z-index: 1111;
+        }
+
+        .row {
+            display: flex;
+            /* flex-wrap: wrap; */
+        }
+        .col-50{
+            width: 100%;
+        }
+        .col-25{
+            width: 100%;
+        }
+        .col-33{
+            width: 100%;
+        }
+        @media (min-widht: 576px){
+            .container {
+                width: 540px;
+            }
+            .row {
+            /* display: flex; */
+            flex-wrap: wrap;
+        }
+        }
+        @media (min-widht: 768px){
+            .container {
+                width: 720px;
+            }
+            .row{
+                flex-wrap: wrap;
+            }
+        }
+        .col-50{
+            width: 50%;
+        }
+        .col-25{
+            width: 25%;
+        }
+        .col-33{
+            width: 33.33%;
+        }
+        @media (min-widht: 992px){
+            .container{
+                width: 950px;
+            }
+            .row {
+            flex-wrap: wrap;
+        }
+        }
+        @media (min-widht: 1200px){
+            .container{
+                width: 1160px;
+            }
+            .row {
+            flex-wrap: wrap;
+        }
+        }
+        nav ul li {
+            display: inline-block;
+        }
+        .menu {
+            margin-left: auto;
+        }
+        .line-50 {
+            line-height: 80px;
+        }
+        #header {
+            background-color: #daac00;
+            position: sticky;
+            top: 0;
+        }
+        .menu ul li a {
+            padding: 0 60px;
+            color: white;
+            text-decoration: none;
+        }
+        .menu-logo img {
+            vertical-align: middle;
+        }
+        .menu-input {
+            padding: 7px 0;
+            background-color: #daac00;
+        }
+        .fa-solid {
+            background-color: #00bec9;
+            padding: 8px 10px;
+        }
+        .col-50 {
+            width: 50%;
+        }
+        .col-33 {
+            width: 33.33%;
+        }
+        .posi-reli {
+            position: relative;
+        }
+        .posi-abso {
+            position: absolute;
+        }
+        #sec-1 {
+            background-color: #fcc302;
+        }
+        .first-h2 {
+            font-size: 55px;
+            font-weight: 600;
+            font-family: "Poppins";
+            color: white;
+            padding-top: 150px;
+        }
+        .first-p {
+            font-size: 18px;
+            color: white;
+            padding: 50px 0;
+        }
+        .input-1 {
+            padding: 10px 0;
+            border-radius: 5px;
+            background-color: #00bec9;
+            text-align: center;
+        }
+        .input-2 {
+            padding: 10px 0;
+            border-radius: 5px;
+            background-color: #fcc302;
+            text-align: center;
+        }
+        .dog-img{
+            padding: 0 90px;
+        }
+        ::-webkit-input-placeholder{
+            color: white;
+            opacity: 50%;
+        }
+        .as-h2{
+            font-size: 55px;
+            font-weight: 600;
+            font-family:"Poppins" ;
+            padding-top: 100px;
+            color:  #313243;
+        }
+        .as-p{
+            font-size: 18px;
+            padding: 30px 0;
+            color: #313243;
+        }
+        .input-bottom{
+            margin-bottom: 150px;
+        }
+        .shape-2{
+            padding-top: 260px;
+        }
+        .img-2{
+            width: 500px;
+            height: 400px;
+            top: 40px;
+            left: 30px;
+        }
+        #sec-3{
+            background-color:  #fcc302;
+        }
+        .title-h2{
+            font-size: 60px;
+            font-weight: 600;
+            font-family:"Poppins";
+            text-align: center;
+            color: white;
+            padding-top: 50px;
+        }
+        .title-p{
+            text-align: center;
+            font-size: 20px;
+            color: white;
+            padding: 50px 200px;
+        }
+        .shape-33 img{
+            padding: 0 30px;
+        }
+        .title-33{
+            text-align: center;
+            font-size: 30px;
+            color: white;
+        }
+        .title-p1{
+            text-align: center;
+            color: white;
+            font-size: 17px;
+            padding: 0 40px;
+            padding-bottom: 50px;
+        }
+        .for-h2{
+            font-size: 55px;
+            font-weight: 600;
+            font-family:"Poppins";
+            color: #313243;
+            text-align: right;
+            padding-top: 150px;
+        }
+        .for-p{
+            font-size: 18px;
+            color: #313243;
+            text-align:right;
+            padding: 30px 0;
+        }
+        .input-3{
+            padding: 10px 0;
+            border-radius: 5px;
+            background-color: #fcc302;
+            text-align: center;
+             display:flex;
+             margin-left: auto;
+             margin-bottom: 150px;
+        }
+        .shape-3{
+            padding-top: 280px;
+            padding-left: 330px;
+        }
+        .img-3{
+            width: 500px;
+            height: 400px;
+            left: 140px;
+            top: 2090px;
+        }
+        #sec-5{
+            background-color: #fcc302;
+        }
+        .col-33 h3{
+            text-align: center;
+            margin: 10px 0;
+        }
+        .dolar-cat{
+            text-decoration: line-through;
+        }
+        .input-5{
+            padding: 7px 0;
+            border-radius: 10px;
+            background-color: #00bec9;
+            text-align: center;
+            margin: 30px 100px;
+        }
+        .team-h2{
+            font-size: 55px;
+            font-weight: 600;
+            font-family:"Poppins" ;
+            text-align: center;
+            color: #313243;
+            padding-top: 50px;
+        }
+        .team-p{
+            text-align: center;
+            font-size: 19px;
+            color: #313243;
+            padding: 30px 200px;
+        }
+        .team-33 img{
+            padding: 0 20px;
+        }
+        .team-1{
+            text-align: center;
+        }
+        .fa-brands{
+            color: #fcc302;
+            margin: 50px 40px;
+        }
+        #sec-7{
+            background-image: url(../MHD.CSS/image/Image\ \(2\).png);
+        }
+        .icon-img img{
+            padding: 0 150px;
+            padding-top: 170px;
+        }
+        .icon-img2 img{
+            padding: 0 162px;
+            padding-top: 170px;
+        }
+        .icon-img3 img{
+            padding: 0 155px;
+            padding-top: 170px;
+        }
+        .team-2{
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .recent-h2{
+            padding: 10px 70px;
+            color: #313243;
+        }
+        .recent-h5{
+            color: #00bec9;
+            padding: 0 70px;
+        }
+        .recento-h5{
+            color:  #00bec9;
+            padding: 0 70px;
+            padding-bottom: 50px;
+        }
+        .recent-p{
+            color: #313243;
+            padding: 10px 70px;
+            text-align: justify;
+        }
+        #sec-9{
+            background-color: #343434;
+        }
+        .col-25{
+            width: 25%;
+        }
+        .col-50{
+            width: 50%;
+        }
+        .col-25 h2{
+            color: white;
+            font-size: 25px;
+            padding: 20px 0;
+        }
+        #col25-ul{
+            list-style-type: none;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        .col50-h2{
+            padding: 20px 0;
+            color: white;
+        }
+        .col50-p{
+            color: white;
+        }
+        .input-6{
+            padding: 10px 20px;
+            background-color: #fcc302;
+            margin: 70px 0;
+        }
+        .col-50 m{
+            background-color: #00bec9;
+            padding: 10px 15px;
+        }
+        .icon-4 i{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row line-50 menu-logo">
+                <div class="logo">
+                    <img src="../psd nambar 2/img/Logo.png" alt="">
+                </div>
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                            <input type="" class="menu-input" name="" placeholder="search." id="">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="sec-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-50">
+                    <h2 class="first-h2">First I Wanted to be a veterinarian</h2>
+                    <p class="first-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit
+                        Quibusdam iusto quasi delectus sequi totam reiciendis, non aperiam
+                        recusandae nostrum facere blanditiis mollitia quas fugiat saepe. </p>
+                    <input type="text" placeholder="contact us" class="input-1" name="" id="">
+                    <input type="text" placeholder="our Services" class="input-2" name="" id="">
+                </div>
+                <div class="col-50">
+                    <img src="../psd nambar 2/img/img 1.png" class="dog-img" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-50">
+                    <h2 class="as-h2">As aveterinarian and lover of animmals</h2>
+                    <p class="as-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit omnis provident
+                        quo magnam, nesciunt neque, rerum impedit animi repellendus reiciendis
+                         perferendis! Perspiciatis distinctio incidunt autem voluptatibus accusamus.</p>
+                         <input type="text" placeholder="our servise" class="input-2 input-bottom" name="" id="">
+                </div>
+                <div class="col-50 posi-reli">
+                    <img src="../psd nambar 2/img/img 2.jpg" class="img-2 posi-abso" alt="">
+                    <img src="../psd nambar 2/img/shape 2.png" class="shape-2" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec-3">
+        <div class="container">
+            <div class="title">
+                <h2 class="title-h2">Title Here</h2>
+                <p class="title-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     dolor veritatis eveniet itaque necessitatibus nisi illum deserunt ab 
+                      molestiae quo blanditiis.</p>
+            </div>
+            <div class="row shape-33 posi-rele">
+                <div class="col-33">
+                    <img src="../psd nambar 2/img/here 2.png" class="posi-abso" alt="">
+                    <img src="../psd nambar 2/img/Shape (1).png" alt="">
+                    <h2 class="title-33">veterinarian</h2>
+                    <p class="title-p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit
+                         Provident aliquam pariatur tempore enim at et.</p>
+                </div>
+                <div class="col-33">
+                    <img src="../psd nambar 2/img/here 1.png" class="posi-abso" alt="">
+                    <img src="../psd nambar 2/img/Shape (1).png" alt="">
+                    <h2 class="title-33">vaccination care</h2>
+                    <p  class="title-p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit
+                        Provident aliquam pariatur tempore enim at et.</p>
+                </div>
+                <div class="col-33">
+                    <img src="../psd nambar 2/img/here 3.png" class="posi-abso" alt="">
+                    <img src="../psd nambar 2/img/Shape (1).png" alt="">
+                    <h2 class="title-33">dental care</h2>
+                    <p class="title-p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit
+                        Provident aliquam pariatur tempore enim at et.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-50 posi-rele">
+                    <img src="../psd nambar 2/img/img 3.jpg" class="img-3 posi-abso" alt="">
+                    <img src="../psd nambar 2/img/shape 2.png" class="shape-3" alt="">
+                    <!-- <img src="../psd nambar 2/img/img 3.jpg" class="img-3 posi-abso" alt=""> -->
+                </div>
+                <div class="col-50">
+                    <h2 class="for-h2">As a veterinarian and lover for animals</h2>
+                    <p class="for-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo enim
+                         asperiores esse commodi consequuntur magni mollitia voluptate ratione
+                          laudantium doloremque optio aliquid vitae sunt, quam.</p>
+                          <input type="text" placeholder="our service" class="input-3" name="" id="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec-5">
+        <div class="container">
+            <div class="title">
+                <h2 class="title-h2">Title Here</h2>
+                <p class="title-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    dolor veritatis eveniet itaque necessitatibus nisi illum deserunt ab 
+                     molestiae quo blanditiis.</p>
+            </div>
+            <div class="row posi-rele shape-33">
+                <div class="col-33">
+                    <img src="../psd nambar 2/img/dog 1.png" class="posi-abso" alt="">
+                    <img src="../psd nambar 2/img/Shape (1).png" alt="">
+                    <h3 class="dolar-cat">$50</h3>
+                    <h3>$30</h3>
+                    <input type="text" placeholder="Buy now" class="input-5" name="" id="">
+                </div>
+                <div class="col-33">
+                    <img src="../psd nambar 2/img/dog 2.png" class="posi-abso" alt="">
+                    <img src="../psd nambar 2/img/Shape (1).png" alt="">
+                    <h3 class="dolar-cat">$40</h3>
+                    <h3>$25</h3>
+                    <input type="text" placeholder="Buy now" class="input-5" name="" id="">
+                </div>
+                <div class="col-33">
+                    <img src="../psd nambar 2/img/dog 3.png" class="posi-abso" alt="">
+                    <img src="../psd nambar 2/img/Shape (1).png" alt="">
+                    <h3 class="dolar-cat">$45</h3>
+                    <h3>$40</h3>
+                    <input type="text" placeholder="Buy now" class="input-5" name="" id="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec-6">
+        <div class="container">
+            <div class="team">
+                <h2 class="team-h2">The veterinarian team</h2>
+                <p class="team-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    dolor veritatis eveniet itaque necessitatibus nisi illum deserunt ab 
+                     molestiae quo blanditiis.</p>
+            </div>
+            <div class="row posi-rele team-33">
+                <div class="col-33">
+                    <img src="../psd nambar 2/img/img 6.png" class="posi-abso" alt="">
+                    <img src="../psd nambar 2/img/Shape (1).png" alt="">
+                    <h2 class="team-1">Jennifer Mullen</h2>
+                    <h3>VETERINARY</h3>
+                    <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-square-twitter"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <i class="fa-brands fa-square-whatsapp"></i>
+                </div>
+                <div class="col-33">
+                    <img src="../psd nambar 2/img/img 5.png" class="posi-abso" alt="">
+                    <img src="../psd nambar 2/img/Shape (1).png" alt="">
+                    <h2 class="team-1">Sheerin Collins</h2>
+                    <h3>ADMINISTRATION</h3>
+                    <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-square-twitter"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <i class="fa-brands fa-square-whatsapp"></i>
+                </div>
+                <div class="col-33">
+                    <img src="../psd nambar 2/img/img 4.png" class="posi-abso" alt="">
+                    <img src="../psd nambar 2/img/Shape (1).png" alt="">
+                    <h2 class="team-1">Shuji Kerimon</h2>
+                    <h3>VETERINARY</h3>
+                    <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-square-twitter"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <i class="fa-brands fa-square-whatsapp"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec-7">
+        <div class="container">
+            <div class="row">
+                <div class="col-33 icon-img">
+                    <img src="../psd nambar 2/img/Icon (2).png" alt="">
+                    <h2 class="team-2">+34793</h2>
+                    <h2 class="team-2">Happyclient</h2>
+                </div>
+                <div class="col-33 icon-img2">
+                    <img src="../psd nambar 2/img/Icon (1).png" alt="">
+                    <h2 class="team-2">+45381</h2>
+                    <h2 class="team-2">Department</h2>
+                </div>
+                <div class="col-33 icon-img3">
+                    <img src="../psd nambar 2/img/Icon.png" alt="">
+                    <h2 class="team-2">+45789</h2>
+                    <h2 class="team-2">vaccination</h2>
+                </div>
+            </div>
+    </section>
+    <section id="sec-8">
+        <div class="container">
+            <div class="posts">
+                <h2 class="team-h2">Recent Posts</h2>
+                <p class="team-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non obcaecati et minus,
+                     nam iste quisquam? Odio eius praesentium quasi! Asperiores tenetur aspernatur.</p>
+            </div>
+            <div class="row posi-rele team-33">
+                <div class="col-33">
+                    <img src="../psd nambar 2/img/here(1).png"class="posi-abso" alt="">
+                    <img src="../psd nambar 2/img/Shape (1).png" alt="">
+                    <h2 class="recent-h2">As a veterinarian and lover for animals</h2>
+                    <h5 class="recent-h5">FEBRUARY 09,2020</h5>
+                    <p class="recent-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Iusto assumenda expedita maxime dolore.</p>
+                         <h5 class="recento-h5">Read More+</h5>
+                </div>
+                <div class="col-33">
+                    <img src="../psd nambar 2/img/here(2).png" class="posi-abso" alt="">
+                    <img src="../psd nambar 2/img/Shape (1).png" alt="">
+                    <h2 class="recent-h2">As a veterinarian and lover for animals</h2>
+                    <h5 class="recent-h5">FEBRUARY 09,2020</h5>
+                    <p class="recent-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Iusto assumenda expedita maxime dolore.</p>
+                         <h5 class="recento-h5">Read More+</h5>
+                </div>
+                <div class="col-33">
+                    <img src="../psd nambar 2/img/here(3).png" class="posi-abso" alt="">
+                    <img src="../psd nambar 2/img/Shape (1).png" alt="">
+                    <h2 class="recent-h2">As a veterinarian and lover for animals</h2>
+                    <h5 class="recent-h5">FEBRUARY 09,2020</h5>
+                    <p class="recent-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Iusto assumenda expedita maxime dolore.</p>
+                         <h5 class="recento-h5">Read More+</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec-9">
+       <div class="container">
+        <div class="row">
+            <div class="col-25">
+                <h2>About</h2>
+                <ul id="col25-ul">
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Brand guidelies</a></li>
+                    <li><a href="#">Terms&Condition</a></li>
+                    <li><a href="#">Privvacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="col-25">
+                <h2>Service</h2>
+                <ul id="col25-ul">
+                    <li><a href="#">How To Order</a></li>
+                    <li><a href="#">Our Product</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Promo</a></li>
+                    <li><a href="#">payment Method</a></li>
+                </ul>
+            </div>
+            <div class="col-50">
+                <h2 class="col50-h2">Title Here</h2>
+                <p class="col50-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <input type="text" name="" class="input-6" id="">
+                <m class="fa-solid fa-location-arrow"></m>
+                <div class="icon-4">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-square-whatsapp"></i>
+                </div>
+            </div>
+        </div>
+       </div>
+    </section>
+</body>
+</html>
