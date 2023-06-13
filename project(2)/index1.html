@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            /* border: 1px solid; */
+        }
+
+        .container {
+            width: 1300px;
+            margin: 0 auto;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .navbar-list {
+            display: flex;
+            list-style: none;
+            gap: 100px;
+            font-size: 18px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+
+        .col-50 {
+            width: 50%;
+        }
+
+        .img-1 {
+            font-size: 65px;
+            text-align: center;
+            font-weight: 400;
+            font-style: italic;
+            padding-top: 30px;
+        }
+
+        .img-2 {
+            font-size: 65px;
+            text-align: center;
+            font-style: italic;
+            padding: 30px 0;
+        }
+
+        .img-3 {
+            font-size: 40px;
+            text-align: center;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        .lain-1 {
+            width: 430px;
+            margin-left: 100px;
+        }
+
+        .img-inp {
+            padding: 4px 15px;
+            margin: 50px 250px;
+            font-weight: 600;
+            background-color: #ffe001;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .img-inp:hover {
+            background-color: aliceblue;
+        }
+
+        .img-4 {
+            font-size: 35px;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .posi-reli {
+            position: relative;
+        }
+
+        .posi-abso {
+            position: absolute;
+        }
+
+        .tomato-img {
+            bottom: 5px;
+            right: -130px;
+        }
+
+        .leaf-img {
+            top: 90px;
+            left: 70px;
+        }
+
+        .leaf-img1 {
+            bottom: -35px;
+            right: -600px;
+        }
+
+        .choose-h2 {
+            font-size: 50px;
+            font-family: "brich";
+            color: #3f6602;
+            font-weight: 600;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .col-33 {
+            width: 33.33%
+        }
+
+        .col-33 img {
+            padding: 40px 30px;
+        }
+
+        .col-33 h3 {
+            text-align: center;
+        }
+
+        .choose-inp {
+            background-color: #ffe001;
+            font-weight: 600;
+            padding: 12px 15px;
+            font-size: 10px;
+            margin: 0 170px;
+            margin-top: 15px;
+            margin-bottom: 50px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .choose-inp:hover {
+            background-color: aliceblue;
+        }
+
+        .upcoming-h2 {
+            font-size: 50px;
+            font-family: "brich";
+            font-weight: 600;
+            font-style: italic;
+            color: #3f6602;
+            text-align: center;
+        }
+
+        .upcoming h3 {
+            text-align: center;
+        }
+        .upcoming-p{
+            text-align: center;
+            font-size: 18px;
+            padding: 20px 70px;
+            color: #3f6602;
+        }
+
+        .img-said {
+            margin-left: 490px;
+        }
+
+        .big-img {
+            left: 350px;
+            bottom: -75px;
+            width: 690px;
+            height: 500px;
+        }
+
+        .posi-img {
+            padding-bottom: 100px;
+        }
+
+        .selid-img {
+            margin-bottom: 27px;
+            margin-left: 40px;
+        }
+
+        .frot-img {
+            margin-left: 40px;
+        }
+
+        .text-1 {
+            left: 210px;
+            top: 60px;
+            color: #3f6602;
+            font-size: 25px;
+            font-weight: 200;
+            font-family: "geom";
+        }
+
+        .text-2 {
+            top: 100px;
+            color: #3f6602;
+            font-size: 35px;
+            font-weight: 600;
+            font-family: "geom";
+            padding: 0 210px;
+        }
+
+        .text-3 {
+            top: 10px;
+            left: 170px;
+            color: #3f6602;
+            font-size: 25px;
+            font-weight: 200;
+            font-family: "geom";
+        }
+
+        .text-4 {
+            top: 50px;
+            font-size: 35px;
+            font-weight: 600;
+            font-family: "geom";
+            color: #3f6602;
+            padding: 0 173px;
+        }
+
+        .text-5 {
+            color: #3f6602;
+            bottom: 160px;
+            left: 80px;
+            font-size: 25px;
+            font-weight: 200;
+            font-family: "geom";
+        }
+
+        .text-6 {
+            bottom: 110px;
+            left: 80px;
+            font-size: 33px;
+            font-weight: 600;
+            font-family: "geom";
+            color: #3f6602;
+        }
+
+        .book-h2 {
+            font-size: 55px;
+            font-weight: 600;
+            font-family: "brich";
+            letter-spacing: 1px;
+            color: #3f6602;
+            text-align: center;
+            font-style: italic;
+            padding-bottom: 40px;
+        }
+
+        .book-h3 {
+            text-align: center;
+            padding-top: 60px;
+        }
+
+        .form {
+            max-width: 50%;
+            /* width: 100%; */
+            margin: 30px auto;
+        }
+
+        .form input {
+            width: 100%;
+            border: 2px solid black;
+            border-radius: 3px;
+            font-size: 19px;
+            margin: 10px 0;
+        }
+
+        .btn-2 {
+            padding: 5px 7px;
+            color: black;
+            border: 2px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-2:hover {
+            color: aliceblue;
+            background-color: black;
+        }
+
+        .footer-h2 {
+            text-align: center;
+            background-color: rgb(125, 187, 241);
+            padding-top: 20px;
+        }
+
+        @media (max-width: 1300px) {
+            #header {
+                flex-direction: column;
+            }
+
+            .navbar-list {
+                flex-direction: column;
+                text-align: center;
+                gap: 50px;
+            }
+
+            .row {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <img src="./IMAGES/Logo.png" alt="">
+        </div>
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li><a href="">home</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">contact</a></li>
+                <input type="text" placeholder="search">
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-50 posi-reli">
+                    <h2 class="img-1">Are you Hungry?</h2>
+                    <h2 class="img-2">I'M HUNGRY!</h2>
+                    <img src="./IMAGES/Leaf (1).png" class="posi-abso leaf-img" alt="">
+                    <h2 class="img-3">Let star to order food now</h2>
+                    <hr class="lain-1">
+                    <input class="img-inp" type="submit" value="ORDER NOW">
+                    <h2 class="img-4">OPENNING SOON</h2>
+                    <img src="../new PSD/IMAGES/Leaf (2).png" class="posi-abso leaf-img1" alt="">
+                </div>
+                <div class="col-50">
+                    <img src="./IMAGES/image 06.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec-1">
+        <div class="choose">
+            <h2 class="choose-h2">CHOOSE ENJOY</h2>
+            <p class="upcoming-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Ipsum distinctio aperiam cumque autem amet, sit mollitia
+                  suscipit aspernatur nesciunt consequuntur quam. Labore provident
+                   quos voluptatem voluptas aperiam iste veniam praesentium?</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-33">
+                    <img src="./IMAGES/image 07.png" alt="">
+                    <h3>LOREM IPSOM DOLOR</h3>
+                    <P>Lorem ipsum dolor sit amet consectetur suscipit-<BR>
+                        earum odio reiciendis.</P>
+                    <input class="choose-inp" type="submit" value="ORDER NOW">
+                </div>
+                <div class="col-33">
+                    <img src="./IMAGES/image 08.png" alt="">
+                    <H3>LOREM IPSOM DOLOR</H3>
+                    <P>Lorem ipsum dolor sit amet consectetur suscipit-<br>
+                        earum odio reiciendis.</P>
+                    <input class="choose-inp" type="submit" value="ORDER NOW">
+                </div>
+                <div class="col-33">
+                    <img src="./IMAGES/image 09.png" alt="">
+                    <H3>LOREM IPSOM DOLOR</H3>
+                    <P>Lorem ipsum dolor sit amet consectetur suscipit-<br>
+                        earum odio reiciendis.</P>
+                    <input class="choose-inp" type="submit" value="ORDER NOW">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec-2">
+        <div class="upcoming">
+            <h3>DISCOVER</h3>
+            <h2 class="upcoming-h2">UPCOMING EVENTS</h2>
+            <p class="upcoming-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                 Necessitatibus temporibus minima repellendus vitae. Quia,
+                  vitae. Eligendi nesciunt doloremque,Necessitatibus temporibus minima repellendus vitae. Quia,
+                  vitae. Eligendi nesciunt doloremque,</p>
+        </div>
+    </section>
+    <section id="sec-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-50 posi-reli">
+                    <h3 class="text-1 posi-abso">TRY IT TUDAY</h3>
+                    <h2 class="text-2 posi-abso">MOST POPULAR</h2>
+                    <img src="./IMAGES/image 10.png" class="plet-img" alt="">
+                </div>
+                <div class="col-50 posi-reli">
+                    <h3 class="text-3 posi-abso">TRY IT TUDAY</h3>
+                    <h2 class="text-4 posi-abso">MURE FUN MORE TASTE</h2>
+                    <img src="./IMAGES/Image (3).png" class="selid-img" alt="">
+                    <!-- <h3 class="text-5 posi-abso">TRY IT TUDAY</h3> -->
+                    <!-- <h2 class="text-6 posi-abso">FRESH & WATER</h2> -->
+                    <img src="./IMAGES/Image (4).png" class="frot-img" alt="">
+                    <h3 class="text-5 posi-abso">TRY IT TUDAY</h3>
+                    <h2 class="text-6 posi-abso">FRESH & WATER</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec-4">
+        <div class="book-your">
+            <h3 class="book-h3">RESERVATION</h3>
+            <h2 class="book-h2">BOOK YOUR TABLE</h2>
+        </div>
+        <div class="form">
+            <input type="text" name=" name" id="name" placeholder="enter your name">
+            <input type="text" phone=" phone" id="phone" placeholder="enter your phone">
+            <input type="text" email=" email" id="email" placeholder="Book your Table Nambar">
+            <button class="btn-2">Submit</button>
+        </div>
+    </section>
+    <section id="sec-5">
+        <h2 class="footer-h2"> copiright &copy; 2027 www.M.K RESTAURANT.com - all right reserved.</h2>
+    </section>
+</body>
+</html>
