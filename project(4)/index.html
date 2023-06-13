@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            /* border: 1px solid; */
+        }
+
+        .container {
+            width: 1300px;
+            margin: 0 auto;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .menu-1 {
+            margin-left: auto;
+        }
+
+        .line-40 {
+            line-height: 90px;
+            background-color: #6c9894;
+        }
+
+        .logo img {
+            width: 75px;
+            height: 75px;
+            background-color: #92e9e2;
+            margin-left: 20px;
+        }
+
+        .men-logo img {
+            vertical-align: middle;
+        }
+
+        .menu ul li a {
+            padding: 75px;
+            color: black;
+        }
+
+        .col-50 {
+            width: 50%;
+        }
+
+        .yoga-h2 {
+            font-size: 80px;
+            letter-spacing: 1px;
+            font-family: "baloo bhai";
+            color: #6c9894;
+            font-weight: 600;
+            padding-top: 260px;
+            margin: 0 50px;
+        }
+
+        .yoga-p {
+            color: #6c9894;
+            text-align: center;
+            padding: 10px 40px;
+        }
+
+        .yoga-a {
+            color: white;
+            background-color: #6c9894;
+            border-radius: 10px;
+            margin: 260px;
+            padding: 0 20px;
+            text-decoration: none;
+        }
+
+        .posi-rele {
+            position: relative;
+        }
+
+        .posi-abso {
+            position: absolute;
+        }
+
+        .img-1 {
+            left: 140px;
+            top: 135px;
+        }
+
+        #sec-1 {
+            background-color: #6c9894;
+        }
+
+        .class-h2 {
+            font-size: 65px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .class-p {
+            text-align: center;
+            font-size: 20px;
+            color: white;
+            padding: 0 190px;
+        }
+
+        .col-33 {
+            width: 33.33%;
+        }
+
+        .img-33 {
+            left: 37px;
+            top: 35px;
+        }
+
+        .our-said {
+            bottom: -420px;
+            z-index: -1;
+        }
+
+        .our-h2 {
+            font-size: 65px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: #6c9894;
+            text-align: center;
+            font-family: "baloo bhai";
+            padding: 20px 0;
+        }
+
+        .our-p {
+            text-align: center;
+            font-size: 17px;
+            color: #6c9894;
+            padding: 0 150px;
+        }
+
+        .col-h3 {
+            text-align: center;
+            font-size: 25px;
+            color: white;
+        }
+
+        .col-p {
+            text-align: center;
+            color: white;
+            padding: 0 70px;
+            padding-bottom: 50px;
+        }
+
+        .image {
+            padding-bottom: 200px;
+            padding-top: 180px;
+            margin-left: 30px;
+        }
+
+        .best-img {
+            width: 646px;
+            height: 800px;
+        }
+
+        .best-bg {
+            background-color: #6c9894;
+            padding: 250px 50px;
+        }
+
+        .best-h2 {
+            font-size: 65px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: white;
+            font-family: "baloo bhai";
+        }
+
+        .best-p {
+            color: white;
+            padding: 20px 0;
+            font-size: 20px;
+        }
+
+        .best-but {
+            color: #6c9894;
+            background-color: white;
+            padding: 10px 5px;
+        }
+
+        .best-inp {
+            padding: 8px 45px;
+            color: #6c9894;
+            background-color: white;
+            font-size: 16px;
+        }
+
+        .said-img {
+            top: 465px;
+            left: 250px;
+
+        }
+
+        .col-33 img {
+            /* margin-left: 30px; */
+            padding: 0 30px;
+        }
+
+        .new-img {
+            padding: 70px 30px;
+        }
+
+        .new-expe {
+            padding: 260px 60px;
+        }
+
+        .new-h2 {
+            font-size: 70px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            font-family: "baloo bhai";
+            color: #6c9894;
+        }
+
+        .new-p {
+            font-size: 20px;
+            color: #6c9894;
+            padding: 25px 0;
+        }
+
+        .new-inp {
+            padding: 8px 45px;
+            font-size: 16px;
+            color: white;
+            background-color: #6c9894;
+        }
+
+        #sec-5 {
+            background-color: #6c9894;
+        }
+
+        .pirin-h2 {
+            font-size: 70px;
+            font-weight: 600;
+            font-family: "baloo bhai";
+            letter-spacing: 1px;
+            text-align: center;
+            padding-top: 50px;
+            color: white;
+        }
+
+        .pirin-p {
+            text-align: center;
+            font-size: 20px;
+            padding: 30px 200px;
+            color: white;
+        }
+
+        .card-33 {
+            padding-bottom: 70px;
+        }
+
+        #sec-6 {
+            background-image: url(../MHD.CSS/image/`10.png);
+        }
+
+        .img-10 {
+            margin: 0 400px;
+            margin-top: 60px;
+        }
+
+        .img-11 {
+            top: 100px;
+            left: 440px;
+        }
+
+        .loren-h3 {
+            padding-top: 30px;
+            padding-bottom: 120px;
+            font-weight: 700;
+            font-size: 30px;
+            color: #6c9894;
+            text-align: center;
+        }
+
+        .loren-p {
+            text-align: center;
+            font-size: 25px;
+            color: #6c9894;
+            padding: 0 50px;
+        }
+
+        #sec-7 {
+            background-color: #6c9894;
+        }
+
+        .dont-miss {
+            text-align: center;
+            font-size: 40px;
+            font-weight: 600;
+            font-family: "baloo bhai";
+            color: white;
+            padding-top: 60px;
+        }
+
+        .dont-p {
+            text-align: center;
+            font-size: 20px;
+            color: white;
+            padding: 0 290px;
+            padding-top: 20px;
+        }
+
+        .your-input {
+            border-radius: 10px;
+            border-color: white;
+            padding: 10px 100px;
+            margin: 0 400px;
+            margin-bottom: 50px;
+        }
+
+        .your-2 {
+            border-radius: 10px;
+            border-color: whitesmoke;
+            padding: 10px 0;
+            text-align: center;
+            color: #6c9894;
+            left: 650px;
+        }
+
+        .col-40 {
+            width: 40%;
+        }
+
+        .col-20 {
+            width: 20%;
+        }
+
+        .title-h3 {
+            font-size: 25px;
+            color: #6c9894;
+            padding-top: 70px;
+            padding-bottom: 20px;
+            padding-left: 55px;
+        }
+
+        .title-p {
+            color: #6c9894;
+            padding: 0 60px;
+            padding-bottom: 150px;
+        }
+
+        .col-20 h3 {
+            font-size: 25px;
+            color: #6c9894;
+            padding-top: 70px;
+            padding-bottom: 20px;
+        }
+
+        #col20-ul {
+            list-style-type: none;
+        }
+
+        a {
+            color: #6c9894;
+            text-decoration: none;
+        }
+
+        @media only screen and (max-width: 1280px) {
+            .row {
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+            }
+
+            .menu {
+                text-align: center;
+            }
+
+            #header {
+                flex-direction: column;
+                text-align: center;
+                width: 100%;
+            }
+
+            .said-img {
+                top: 250px;
+                left: 150px;
+            }
+            .img-10{
+                margin: 0px 20px;
+            }
+
+            .img-11 {
+                top: 40px;
+                left: 60px;
+            }
+            .your-input{
+                margin: 0px;
+            }
+            .your-2{
+                left: 300px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="row line-40 men-logo">
+            <div class="logo">
+                <img src="./PSD imaig/Logo.png" alt="">
+            </div>
+            <div class="menu menu-1">
+                <nav>
+                    <ul class="row">
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">Servic</a></li>
+                        <li><a href="#">content us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-50 posi-rele">
+                    <img src="./PSD imaig/img1.png" class="posi-abso img-1" alt="">
+                    <img src="./PSD imaig/Shape (1).png" alt="">
+                </div>
+                <div class="col-50 posi-rele">
+                    <img src="./PSD imaig/desing 3.png" class="posi-abso said-img" alt="">
+                    <h2 class="yoga-h2">YOGA CLASS</h2>
+                    <p class="yoga-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit sitperferendis tempora
+                        Assumenda perferendis tempora dolores alias ullamperferendis temporaperferendis tempora
+                        Nisi maiores dolorum qui voluptatemperferendis tempora.</p>
+                    <a class="yoga-a" href="#">JION NOW</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="sec-1">
+        <div class="class">
+            <h2 class="class-h2">CHOOSE CLASS</h2>
+            <P class="class-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit ametodit dolorem consectetur eos
+                exercitationem maiores
+                At dolores, odit dolorem consectetur eos exercitationem maiores amet consedolores, odit dolorem
+                consectetur
+                repellat ad debitis.</P>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-33 posi-rele">
+                    <img src="./PSD imaig/img (1).png" class="posi-abso img-33" alt="">
+                    <img src="./PSD imaig/desing 3.png" alt="">
+                    <h3 class="col-h3">NEWBIE CLASS</h3>
+                    <P class="col-p">Lorem ipsum, dolor sit amet consectetur
+                        Lorem ipsum, dolor sitconsectetur.</P>
+                </div>
+                <div class="col-33 posi-rele">
+                    <img src="./PSD imaig/img (2).png" class="posi-abso img-33" alt="">
+                    <img src="./PSD imaig/desing 3.png" alt="">
+                    <h3 class="col-h3">ADVANCED CLASS</h3>
+                    <P class="col-p">Lorem ipsum, dolor sit amet consectetur
+                        Lorem ipsum, dolor sit amet.</P>
+                </div>
+                <div class="col-33 posi-rele">
+                    <img src="./PSD imaig/img (3).png" class="posi-abso img-33" alt="">
+                    <img src="./PSD imaig/desing 3.png" alt="">
+                    <h3 class="col-h3">EXPERT CLASS</h3>
+                    <P class="col-p">Lorem ipsum, dolor sit amet consectetu
+                        Lorem ipsum, dolor amet consectetu.</P>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec-2">
+        <div class="our-stets posi-rele">
+            <h2 class="our-h2">OUR STETS</h2>
+            <P class="our-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed veniamnostrum ipsum
+                adipisci
+                nostrum ipsum adipisci inventore aperiam quisquam id quia namnostrum ipsum adipiscinostrum ipsum
+                adipisci
+                esse debitisnostrum ipsum adipiscinostrum ipsum adipiscinostrum ipsum adipiscinostrum ipsum
+                adipisci.</P>
+            <img src="./PSD imaig/said 1.png" class="our-said posi-abso" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-33 image">
+                    <img src="./PSD imaig/logo 1.png" alt="">
+                </div>
+                <div class="col-33 image">
+                    <img src="./PSD imaig/logo 1.png" alt="">
+                </div>
+                <div class="col-33 image">
+                    <img src="./PSD imaig/logo 1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-50 best-bg">
+                    <h2 class="best-h2">BEST INSTRUCTOR</h2>
+                    <P class="best-p">Lorem ipsum dolor sit amet consectetur adipisicing eum elit
+                        At provident possimus reiciendis! Neque eumdolor sit amet consectetur
+                        explicabo accusantium numquam quibusdam magni.</P>
+                    <input class="best-inp" type="submit" value="READ MORE">
+                </div>
+                <div class="col-50">
+                    <img src="./PSD imaig/Image (1).png" class="best-img" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-50">
+                    <img src="./PSD imaig/Image.png" class="new-img" alt="">
+                </div>
+                <div class="col-50 new-expe">
+                    <h2 class="new-h2">NEW EXPERIENCE</h2>
+                    <p class="new-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit dolor sit
+                        Atque consectetur rerum ex animi placeat similique debitis
+                        aliquid commodi nihil, qui totam reiciend sequi doloribus.</p>
+                    <input class="new-inp" type="submit" value="READ MORE" name="" id="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec-5">
+        <div class="pirin-cing">
+            <h2 class="pirin-h2">princing</h2>
+            <p class="pirin-p">Lorem ipsum dolor sit amet consectetur adipisicing elit unde sitaccusantium
+                labore assumenda
+                Ab accusantium labore assumenda unde illo possimus pariatur nesciuntaccusantium labore
+                assumendaassumenda
+                Errorfacereaccusantium labore assumenda unde.</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-33 card-33">
+                    <img src="./PSD imaig/Card  (1).png" alt="">
+                </div>
+                <div class="col-33 card-33">
+                    <img src="./PSD imaig/Card  (2).png" alt="">
+                </div>
+                <div class="col-33 card-33">
+                    <img src="./PSD imaig/Card  (3).png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec-6">
+        <div class="posi-2 posi-rele">
+            <img src="./PSD imaig/10 img.png" class="posi-abso img-11" alt="">
+            <img src="./PSD imaig/img 10.png" class="img-10" alt="">
+        </div>
+        <div class="lorem">
+            <p class="loren-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aliquid sit alias molestias
+                cupiditate autem, rem necessitatibus error itaque animi, quasi ipsa nemo dolorem quibusdam iusto
+                voluptate tempora eum sequi! rem necessitatibus error itaque animi rem necessitatibus error itaque
+                animi
+            </p>
+            <h3 class="loren-h3">TRAINER DEVANDRA</h3>
+        </div>
+    </section>
+    <section id="sec-7">
+        <div class=" posi-rele">
+            <h2 class="dont-miss">DONT MISS OUR UPDATE</h2>
+            <p class="dont-p">Lorem ipsum dolor consectetur adipisicing elit. Quaerat quidem exercitationem impedit
+                deserunt at fuga numquam ratione est vel odio magnam asperiores delectus expedita
+                dolorum architecto .</p>
+            <input class="your-2 posi-abso" type="text" value="subscribe" name="" id="">
+            <input class="your-input" type="text" placeholder="your email">
+        </div>
+    </section>
+    <section id="sec-8">
+        <div class="container">
+            <div class="row">
+                <div class="col-40">
+                    <h3 class="title-h3">Title Here</h3>
+                    <p class="title-p">Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        Praesentium alias expe laudantium ducimus placeat expe laudantium
+                        luptatibus aspernatur voluptatem magnam maxime
+                        exercitationem cumque in explicabo pariatur.</p>
+                </div>
+                <div class="col-20">
+                    <h3>About</h3>
+                    <ul id="col20-ul">
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">OurTeam</a></li>
+                        <li><a href="#">BrandGuidelines</a></li>
+                        <li><a href="#">Terms Condition</a></li>
+                        <li><a href="#">Privacy Polisy</a></li>
+                    </ul>
+                </div>
+                <div class="col-20">
+                    <h3>Services</h3>
+                    <ul id="col20-ul">
+                        <li><a href="#">Houto order</a></li>
+                        <li><a href="#">our product</a></li>
+                        <li><a href="#">order Status</a></li>
+                        <li><a href="#">Promo</a></li>
+                        <li><a href="#">pyament method</a></li>
+                    </ul>
+                </div>
+                <div class="col-20">
+                    <h3>FOlloow</h3>
+                    <ul id="col20-ul">
+                        <li><a href="#"> <i class="fa-brands fa-facebook"></i>Facbook</a></li>
+                        <li><a href="#"> <i class="fa-brands fa-square-twitter"></i>Twitter</a></li>
+                        <li><a href="#"><i class="fa-brands fa-square-instagram"></i>Instagram</a></li>
+                        <li><a href="#"> <i class="fa-brands fa-square-whatsapp"></i>Wshatsaap</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
